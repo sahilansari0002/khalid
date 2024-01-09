@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axico Ayurveda - Shaikh Khalid</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            transition: background-color 0.5s;
+        }
+
+        header {
+            background: url('background-image.jpg') center center no-repeat; /* Replace 'background-image.jpg' with your actual background image path */
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            transition: background 0.5s;
+        }
+
+       header img {
+            max-width: 150px; /* Set a specific width for the logo */
+            height: auto;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transition: transform 0.3s;
+        }
+
+
+        header:hover {
+            background-color: rgba(0, 0, 0, 0.5); /* Darken the background on hover */
+        }
+
+        header:hover img {
+            transform: scale(1.1); /* Enlarge the logo on hover */
+        }
+
+         section {
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Center the section horizontally */
+            padding: 20px;
+        }
+
+
+        #achievements figure,
+        #products .product,
+        #about .profile-container {
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #achievements figure:hover,
+        #products .product:hover,
+        #about .profile-container:hover {
+            transform: scale(1.05); /* Enlarge on hover */
+        }
+
+        #achievements img,
+        #products .product img,
+        #about .profile-container img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+            border-radius: 10px;
+        }
+
+        #achievements figure:hover img,
+        #products .product:hover img,
+        #about .profile-container:hover img {
+            transform: scale(1.1); /* Enlarge the image on hover */
+        }
+
+        /* Add overall animation to the website */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+         .buy-now-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-now-btn:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Axico Ayurveda Logo">
+        <h1>Axico Ayurveda</h1>
+        <p>Welcome to the world of Ayurveda</p>
+    </header>
+
+       <section id="about">
+    <h2>About Me - Shaikh Khalid</h2>
+    
+    <!-- Replace 'path_to_your_picture.jpg' with the actual path to your picture -->
+    <div class="profile-container">
+        <img src="khild.jpg" alt="Shaikh Khalid" class="profile-image">
+        <p class="profile-name">Shaikh Khalid</p>
+    </div>
+
+    <p>Greetings! I'm Shaikh Khalid, and I am honored to welcome you to the world of Axico Ayurveda.</p>
+    <p>As a passionate advocate for Ayurvedic wellness, I have dedicated myself to promoting the holistic benefits of Ayurveda and natural living. My journey with Axico Ayurveda has been a transformative experience, marked by significant milestones and achievements in the field of network marketing.</p>
+    <p>With the prestigious title of Sapphire Direct at Axico Ayurveda, I have not only built a thriving network but have also fostered a community dedicated to health, well-being, and the Ayurvedic lifestyle. My commitment extends beyond achieving personal success; it lies in empowering others to embrace the wisdom of Ayurveda and make positive choices for their health.</p>
+    <p>Join me on this incredible Ayurvedic wellness journey, where together, we can inspire and elevate others towards a balanced and fulfilling life.</p>
+</section>
+
+
+   <section id="achievements">
+    <h2>My Achievements</h2>
+
+    <figure>
+        <!-- Replace 'path_to_achievement_image1.jpg' with the actual path to your first achievement image -->
+        <img src="a2.jpg" alt="Achievement 1">
+        <figcaption><b>Achievement 1</b></figcaption>
+    </figure>
+
+    <figure>
+        <!-- Replace 'path_to_achievement_image2.jpg' with the actual path to your second achievement image -->
+        <img src="a1.jpg" alt="Achievement 2">
+        <figcaption><b>Achievement 2</b></figcaption>
+    </figure>
+
+    <figure>
+        <!-- Replace 'path_to_group_image.jpg' with the actual path to your group image -->
+        <img src="group.jpg" alt="Group Photo">
+        <figcaption><b>Group Photo</b></figcaption>
+    </figure>
+
+    <p>These achievements reflect not only personal success but also a commitment to promoting health and wellness through Ayurveda. Join me on this rewarding journey, and together, let's inspire others to embrace the holistic benefits of Ayurvedic living.</p>
+</section>
+
+
+   <section id="products">
+    <h2>Our Products</h2>
+
+    <div class="product">
+        <!-- Replace 'p1.jpg' with the actual path to your product image -->
+        <img src="p1.jpg" alt="Product 1">
+        <h3>Body Mist</h3>
+        <p>Description of Body Mist. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- Add a Buy Now button with WhatsApp link -->
+        <a href="https://wa.me/+919922267776?text=I%20want%20to%20buy%20Product%20Body%20Mist" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <!-- Replace 'path_to_product_image2.jpg' with the actual path to your product image -->
+        <img src="p2.jpg" alt="Product 2">
+        <h3>Soap</h3>
+        <p>Description of Soap. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- Add a Buy Now button with WhatsApp link -->
+        <a href="https://wa.me/+919922267776?text=I%20want%20to%20buy%20Product%20Soap" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <!-- Replace 'path_to_product_image3.jpg' with the actual path to your product image -->
+        <img src="p3.jpg" alt="Product 3">
+        <h3>Rose Water</h3>
+        <p>Description of Rose Water. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- Add a Buy Now button with WhatsApp link -->
+        <a href="https://wa.me/1234567890?text=I%20want%20to%20buy%20Product%203" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Add more products as needed -->
+</section>
+
+
+    <footer>
+        <p>Contact: shaikh.khalid@example.com</p>
+        <!-- Add social media links here -->
+    </footer>
+</body>
+</html>
